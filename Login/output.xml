@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-31T21:47:11.203943" rpa="false" schemaversion="5">
+<suite id="s1" name="ReadMore" source="C:\Users\khens\PycharmProjects\Project PKPL\Login\ReadMore.robot">
+<test id="s1-t1" name="ReadMore" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-31T21:47:11.368768" level="INFO">Opening browser 'edge' to base url 'http://127.0.0.1:8000/contributor/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-31T21:47:11.368768" elapsed="2.358904"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-31T21:47:13.727672" elapsed="0.000993"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T21:47:13.729673" level="INFO">Typing text 'johannasiagian' into text field '//*[@id="form2Example17"]'.</msg>
+<arg>//*[@id="form2Example17"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T21:47:13.729673" elapsed="0.370529"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-31T21:47:14.101198" level="INFO">Typing password into text field '//*[@id="form2Example27"]'.</msg>
+<msg time="2024-05-31T21:47:14.214766" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="form2Example27"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T21:47:14.100202" elapsed="0.160562"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T21:47:14.261779" level="INFO">Clicking element '//html/body/section/div/div/div/div/div/div[2]/div/form/div[4]'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T21:47:14.260764" elapsed="0.032599"/>
+</kw>
+<status status="PASS" start="2024-05-31T21:47:11.367750" elapsed="2.925613"/>
+</test>
+<status status="PASS" start="2024-05-31T21:47:11.204942" elapsed="3.089422"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ReadMore">ReadMore</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

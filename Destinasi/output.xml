@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-31T21:24:08.921022" rpa="false" schemaversion="5">
+<suite id="s1" name="Tambah Destinasi True" source="C:\Users\khens\PycharmProjects\Project PKPL\Destinasi\Tambah_Destinasi_True.robot">
+<test id="s1-t1" name="Tambah Destinasi Test" line="23">
+<kw name="Ensure Screenshot Directory Exists">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2024-05-31T21:24:09.089712" level="FAIL">Keyword 'OperatingSystem.Create Directory' expected 1 argument, got 2.</msg>
+<arg>${path}</arg>
+<arg>exist_ok=True</arg>
+<doc>Creates the specified directory.</doc>
+<status status="FAIL" start="2024-05-31T21:24:09.089712" elapsed="0.000000">Keyword 'OperatingSystem.Create Directory' expected 1 argument, got 2.</status>
+</kw>
+<arg>${SCREENSHOT_DIR}</arg>
+<status status="FAIL" start="2024-05-31T21:24:09.089205" elapsed="0.000507">Keyword 'OperatingSystem.Create Directory' expected 1 argument, got 2.</status>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090442" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="form2Example17"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.000000"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>//*[@id="form2Example27"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MOREINFO_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${MOREINFO_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${TAMBAH_BUTTON}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.090953" elapsed="0.001011"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}/before_click_tambah.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.091964" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${TAMBAH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.091964" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="name"]</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.091964" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="name"]</arg>
+<arg>${NAMADESTINASI}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.091964" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="ticket"]</arg>
+<arg>${TICKET_PRICE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.091964" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="location"]</arg>
+<arg>${LOCATION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.091964" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>//*[@id="destination_category_id"]</arg>
+<arg>${CATEGORY_ID}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.092961" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>//*[@id="kabupaten_id"]</arg>
+<arg>${KABUPATEN_ID}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.092961" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>/html/body/div[1]/div[1]/section[2]/div/div[2]/div/div/div/div/div/form/div[7]/div/div/div[2]/div</arg>
+<arg>${DESCRIPTION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.092961" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}/after_form_filled.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.092961" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[contains(text(), 'Submit')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.092961" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_DIR}/after_submit.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.092961" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-05-31T21:24:09.093963" elapsed="0.000000"/>
+</kw>
+<doc>Test case to click the "Tambah" button and take a screenshot.</doc>
+<status status="FAIL" start="2024-05-31T21:24:09.088659" elapsed="0.005304">Keyword 'OperatingSystem.Create Directory' expected 1 argument, got 2.</status>
+</test>
+<status status="FAIL" start="2024-05-31T21:24:08.923022" elapsed="0.170941"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tambah Destinasi True">Tambah Destinasi True</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

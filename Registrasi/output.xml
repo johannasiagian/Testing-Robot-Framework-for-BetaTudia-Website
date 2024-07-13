@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-31T22:01:44.276318" rpa="false" schemaversion="5">
+<suite id="s1" name="Registrasi false" source="C:\Users\khens\PycharmProjects\Project PKPL\Registrasi\Registrasi_false.robot">
+<test id="s1-t1" name="Register User" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-31T22:01:44.448105" level="INFO">Opening browser 'edge' to base url 'http://127.0.0.1:8000/contributor/register'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-31T22:01:44.448105" elapsed="2.143892"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-31T22:01:46.592999" elapsed="0.000999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T22:01:46.593998" level="INFO">Typing text '' into text field '//*[@id="form2Example17"]'.</msg>
+<arg>//*[@id="form2Example17"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T22:01:46.593998" elapsed="0.058538"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-31T22:01:46.653556" level="INFO">Typing text 'andi@gmail.com' into text field '//*[@id="form2Example17"]'.</msg>
+<arg>//*[@id="form2Example17"]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T22:01:46.652536" elapsed="0.097240"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-31T22:01:46.750776" level="INFO">Typing password into text field '//*[@id="form2Example27"]'.</msg>
+<msg time="2024-05-31T22:01:46.775103" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="form2Example27"]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T22:01:46.750776" elapsed="0.092264"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-31T22:01:46.844040" level="INFO">Typing password into text field '//*[@id="form2Example28"]'.</msg>
+<msg time="2024-05-31T22:01:46.869504" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="form2Example28"]</arg>
+<arg>${ULANGIPASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T22:01:46.844040" elapsed="0.094257"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-31T22:01:46.938297" level="INFO">Clicking element '//html/body/section/div/div/div/div/div/div[2]/div/form/div[4]'.</msg>
+<arg>${REGISTRASI_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-31T22:01:46.938297" elapsed="0.038903"/>
+</kw>
+<status status="PASS" start="2024-05-31T22:01:44.447115" elapsed="2.530085"/>
+</test>
+<status status="PASS" start="2024-05-31T22:01:44.277327" elapsed="2.700881"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Registrasi false">Registrasi false</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

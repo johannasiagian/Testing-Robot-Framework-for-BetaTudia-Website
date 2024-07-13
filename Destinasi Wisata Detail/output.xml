@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-31T21:43:44.307500" rpa="false" schemaversion="5">
+<suite id="s1" name="ReadMore" source="C:\Users\khens\PycharmProjects\Project PKPL\Destinasi Wisata Detail\ReadMore.robot">
+<test id="s1-t1" name="Tambah Profile Without Login" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-31T21:43:44.492005" level="INFO">Opening browser 'edge' to base url 'http://127.0.0.1:8000/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-31T21:43:44.492005" elapsed="2.563520"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-31T21:43:47.056525" elapsed="0.001007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-31T21:43:57.610565" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-31T21:43:57.611481" level="FAIL">Element '//*[@id="your-read-more-button-id"]' not visible after 10 seconds.</msg>
+<arg>${READMORE_BUTTON}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-31T21:43:47.057532" elapsed="10.557946">Element '//*[@id="your-read-more-button-id"]' not visible after 10 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${READMORE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-31T21:43:57.617480" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-31T21:43:44.491005" elapsed="13.127484">Element '//*[@id="your-read-more-button-id"]' not visible after 10 seconds.</status>
+</test>
+<status status="FAIL" start="2024-05-31T21:43:44.308475" elapsed="13.312006"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="ReadMore">ReadMore</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
